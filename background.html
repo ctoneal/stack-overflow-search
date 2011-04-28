@@ -1,0 +1,11 @@
+<script>
+	function onClickSearch(info, tab)
+	{
+		var searchString = info.selectionText.split(" ").join("+");
+		var url = "http://stackoverflow.com/search?q=" + searchString;
+		chrome.tabs.create({'url': url});
+	}
+
+	chrome.contextMenus.create({"title": "Search Stack Overflow for '%s'", "contexts": ["selection"],
+								"onclick": onClickSearch});
+</script>

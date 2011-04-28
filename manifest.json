@@ -1,0 +1,15 @@
+{
+	"name": "Stack Overflow Search",
+	"version": "1.0",
+	"description": "Search Stack Overflow by right clicking.",
+	"permissions":
+	[
+		"tabs",
+		"contextMenus"
+	],
+	"icons": 
+	{
+		"16": "transparent.png"
+	},
+	"background_page": "background.html"
+}
